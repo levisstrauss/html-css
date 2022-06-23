@@ -1,22 +1,22 @@
 # CSS This repo is everything you need to understand about CSS
 
-==== External links =====
+================ External links =============
 
     <link rel="stylesheet" type="text/css" src="directory" />
 
-==== Selection =====
+================ Selection ==================
 
     <div id="test"></div>          ==>    #test {....}
     <div class="test"></div>       ==>    .test {....}
 
-======================= Box Model =================
+================ Box Model ==================
      
     . Margin
     . Border
     . Padding
     . Content
 
-==== Padding and margin =====
+============= Padding and margin =============
 
     margin-top: 50px;
     margin-left: auto;     
@@ -24,39 +24,55 @@
 
     Top => Right => Bottom => Left
 
-    This can be replace by margin: ? ? ? ?;
-    witch is: Top, Right, Bottom, Left => TRBL
-    This is also the same when we have 3, 2 values
+    margin:    10px      |    auto;     __
+             top/bottom      right/left
 
-==== Position ==========
+    NB: One value: applied for all four sides
+        Two values: One value for top/bottom second right/left
+        Three values: for top, right,  bottom
+        Four values: top, right, bottom, left
 
-    display: block;
-    line-height: 24px;
-
-==== Center ==========
+================= Center ====================
 
     margin: 0 auto;
     justify-content: center;
 
-==== Alignment =========
+================= Alignment & Position =================
 
     line-height: 1.5;
+    text-align: center;
+    justify-content: center, space-around, start, end...;
 
-==== Forms & Borders ====
+    -------------------------------------------------
+
+    display: block, flex, inline or inline-block;
+    line-height: 24px;
+
+    NB: It's even cooler when we want to manipulate
+        the position of a child element from it parent one
+        by fixing the position of the parent as: relative
+        and the child as: absolute;
+
+    <div position: relative>
+       <div position: absolute></div>
+    </div>
+
+================= Forms & Borders ===========
 
     width: 300px;
+    height: 10px;
+    -----------------------
     border: 4px solid blue;
     border-radius: 100px; 
-    font-weight: bold;
+    border-bottom, border-right, border-left...
 
-
-==== Colors =============
+================= Colors ====================
 
     color: #222 or black;
     background: lightgray;
 
 
-==== Flexbox =====
+================== Flexbox ===================
      
     NB: If the parent div has a display flex that mean, every childs
         inside of it will inherit from the display position.
@@ -64,10 +80,40 @@
     display: flex;
     justify-content: center, start, end, space-around, space-between;
 
+================== Image =====================
 
+    Background-image: url("");
+    background-size: cover;
 
+=================== Text =====================
 
-====== Image Description of all projects ==========
+     font-weight: bold;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-size: 80px;
+     text-shadow: 5px 0px 10 black; => Horizontal, Vertical, blur, color;
+
+     NB: If we are using a ttf font, we can just use:
+   
+     @font-face {
+         src: url("Corleone.ttf");
+         font-family: Corleone;
+     }
+
+     h1 {
+          font-family: Corleone;
+     }
+}
+
+============= Projects screenshot ============
 
       Project 1
 ![](/images/google-interface.png?raw=true "Google Search Page")
+
+      Project 2
+![](/images/navigation.png?raw=true "Header Navigation")
+
+      Project 3
+![](/images/business-card.png?raw=true "Business Card")
+
+      Project 4
+![](/images/spacer.png?raw=true "Space website")

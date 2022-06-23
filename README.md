@@ -106,14 +106,17 @@
 
 ============= Projects screenshot ============
 
-      Project 1
+      Project 1: Google Search Page
 ![](/images/google-interface.png?raw=true "Google Search Page")
 
-      Project 2
+      Project 2: Header Navigation
 ![](/images/navigation.png?raw=true "Header Navigation")
 
-      Project 3
+      Project 3: Business Card
 ![](/images/business-card.png?raw=true "Business Card")
 
-      Project 4
+      Project 4: Space website
 ![](/images/spacer.png?raw=true "Space website")
+
+      Project 5: Birthday website
+![](/images/spacer.png?raw=true "Birthday website")

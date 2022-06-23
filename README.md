@@ -33,6 +33,15 @@
     display: block;
     line-height: 24px;
 
+==== Center ==========
+
+    margin: 0 auto;
+    justify-content: center;
+
+==== Alignment =========
+
+    line-height: 1.5;
+
 ==== Forms & Borders ====
 
     width: 300px;
@@ -47,8 +56,6 @@
     background: lightgray;
 
 
-
-
 ==== Flexbox =====
      
     NB: If the parent div has a display flex that mean, every childs
@@ -56,3 +63,11 @@
 
     display: flex;
     justify-content: center, start, end, space-around, space-between;
+
+
+
+
+====== Image Description of all projects ==========
+
+      Project 1
+      ![](/images/google-interface.png?raw=true "Google Search Page")

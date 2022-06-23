@@ -1,6 +1,11 @@
+/*
+Challenge:
+Wrap the buttons in a flexbox div and center them.
+Give the div a "btn-wrapper" class.
+*/
+
 .main {
     margin-top: 100px;
-    text-align: center;
 }
 
 .logo-img {
@@ -17,16 +22,28 @@
     margin-left: auto;
     margin-right: auto;
     line-height: 24px;
-    padding: 10px 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
     border: 1px solid #dfe1e5;
     border-radius: 24px;
 }
 
+.btn-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
 .btn {
+    margin-left: 4px;
     margin-top: 30px;
     background: #dfe1e5;
     border: none;
-    padding: 8px 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
     border-radius: 4px;
     font-size: 14px;
 }

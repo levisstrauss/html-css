@@ -78,6 +78,8 @@
         inside of it will inherit from the display position.
 
     display: flex;
+    flex-direction: row, column;
+    align-items: center;
     justify-content: center, start, end, space-around, space-between;
 
 ================== Image =====================
@@ -119,4 +121,4 @@
 ![](/images/spacer.png?raw=true "Space website")
 
       Project 5: Birthday website
-![](/images/spacer.png?raw=true "Birthday website")
+![](/images/birthday.png?raw=true "Birthday website")

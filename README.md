@@ -60,7 +60,9 @@
 ================= Forms & Borders ===========
 
     width: 300px;
+    max-width: 815px;
     height: 10px;
+    max-height: 1200px;
     -----------------------
     border: 4px solid blue;
     border-radius: 100px; 
@@ -87,12 +89,25 @@
     Background-image: url("");
     background-size: cover;
 
+    img {
+        filter: brightness(0) invert(1);
+        width: 24px;
+        user-select: none;
+        @media (max-width: 600px) {
+        width: 16px;
+    }
+
 =================== Text =====================
 
-     font-weight: bold;
-     font-family: Verdana, Geneva, Tahoma, sans-serif;
      font-size: 80px;
+     font-weight: bold;
+     text-align: center;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
      text-shadow: 5px 0px 10 black; => Horizontal, Vertical, blur, color;
+     white-space: pre-wrap;
+     user-select: none;
+     overflow: hidden;
+     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 
      NB: If we are using a ttf font, we can just use:
    
@@ -104,9 +119,22 @@
      h1 {
           font-family: Corleone;
      }
-}
+=================== Cursor =====================
 
-============= Projects screenshot ============
+    cursor: pointer;
+
+================= Media Queries ================
+
+    @media (max-width: 600px) {
+    font-size: 35px;
+    }
+
+
+================= Animations ================
+
+    transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+
+================= Projects screenshot ===========
 
       Project 1: Google Search Page
 ![](/images/google-interface.png?raw=true "Google Search Page")
